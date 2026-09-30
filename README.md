@@ -64,55 +64,6 @@ Run a compiled program with `./program_name`. For example:
 
 ![Task 5 exit evidence](evidence/task5_exit.png)
 
-## Flow Diagrams
-
-### Task 1
-
-```mermaid
-flowchart LR
-    A[Start] --> B[Print starting]
-    B --> C[Sleep for 30 seconds]
-    C --> D[Print finished]
-    D --> E[Exit 0]
-```
-
-### Task 2
-
-```mermaid
-flowchart LR
-    A[Start] --> B[Read PID and PPID]
-    B --> C[Print identifiers]
-    C --> D[Sleep for 20 seconds]
-    D --> E[Exit 0]
-```
-
-### Task 3
-
-```mermaid
-flowchart LR
-    A[Read number] --> B{Positive}
-    B -->|Yes| C[Exit 0]
-    B -->|No| D[Exit 1]
-```
-
-### Task 4
-
-```mermaid
-flowchart LR
-    A[Ask for name] --> B[Read input]
-    B --> C[Print greeting]
-    C --> D[Exit 0]
-```
-
-### Task 5
-
-```mermaid
-flowchart LR
-    A[Read choice] --> B{Choice is 1}
-    B -->|Yes| C[Continue and exit 0]
-    B -->|No| D[Terminate and exit 1]
-```
-
 ## Conclusion
 
 I learned how C programs become Linux processes and how Linux reports process identity and exit status. The screenshots show that each program compiled and produced the expected result.
