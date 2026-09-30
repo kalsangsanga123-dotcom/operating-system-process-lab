@@ -18,6 +18,11 @@ pointer.c
 legacy-ubuntu-c-tmp/
 ubuntu-created.txt
 
+# Local Docker development setup
+Dockerfile
+compose.yaml
+README-SETUP.txt
+
 # Local Word report draft awaiting real VS Code screenshots
 documentation/
 
