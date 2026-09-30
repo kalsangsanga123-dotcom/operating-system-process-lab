@@ -44,25 +44,39 @@ Run a compiled program with `./program_name`. For example:
 
 ![Task 1 process evidence](evidence/task1_process.png)
 
+The program is running in the background while the terminal is still available. The `ps` command finds `task1_alive`, and the final message shows that it finished normally.
+
 ### Task 2
 
 ![Task 2 PID evidence](evidence/task2_pid_ppid.png)
+
+The program prints its process ID and parent process ID, then waits for 20 seconds. The `ps` output shows the same PID and PPID values.
 
 ### Task 3
 
 ![Task 3 success evidence](evidence/task3_success.png)
 
+A positive number follows the success path. The command `echo $?` displays `0`, which means the program ended successfully.
+
 ![Task 3 failure evidence](evidence/task3_failure.png)
+
+A negative number follows the failure path. The command `echo $?` displays `1`, showing that the program returned a failure code.
 
 ### Task 4
 
 ![Task 4 input evidence](evidence/task4_input.png)
 
+The first compile command uses the wrong filename, so GCC reports an error. After correcting the command, the program reads a name and prints a greeting.
+
 ### Task 5
 
 ![Task 5 continue evidence](evidence/task5_continue.png)
 
+Entering `1` continues the program successfully. The command `echo $?` displays `0` because the program returned a success code.
+
 ![Task 5 exit evidence](evidence/task5_exit.png)
+
+Entering `0` terminates the program as requested. The command `echo $?` displays `1` because the program returned a failure code.
 
 ## Conclusion
 
