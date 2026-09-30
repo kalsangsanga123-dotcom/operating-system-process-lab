@@ -1,0 +1,27 @@
+# Compiled programs
+src/lab2
+src/task1_alive
+src/task2_identity
+src/task3_exit
+src/task4_input
+src/task5_control
+memory
+pointer
+
+# Original temporary names and unrelated exercises
+src/lab2.c
+src/lab3.c
+memory.c
+pointer.c
+
+# Local backup and persistence test
+legacy-ubuntu-c-tmp/
+ubuntu-created.txt
+
+# Local Word report draft awaiting real VS Code screenshots
+documentation/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

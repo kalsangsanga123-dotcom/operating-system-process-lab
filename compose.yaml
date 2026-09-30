@@ -1,0 +1,14 @@
+services:
+  ubuntu-c-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ubuntu-c-dev:24.04
+    container_name: ubuntu-c-dev
+    hostname: ubuntu-c-dev
+    working_dir: /workspace
+    volumes:
+      - "C:/Users/A C E R/os-labs:/workspace"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
